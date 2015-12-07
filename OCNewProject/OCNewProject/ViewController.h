@@ -7,8 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RootViewController.h"
+@interface ViewController : RootViewController
+{
 
-@interface ViewController : UIViewController
+    //用来保存应用信息的数据源数组
+    NSMutableArray * _dataArray;
+
+
+}
 
 
 @end

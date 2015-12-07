@@ -14,6 +14,11 @@
 		0466628E1C151B9300D5521D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0466628D1C151B9300D5521D /* Images.xcassets */; };
 		046662911C151B9300D5521D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0466628F1C151B9300D5521D /* LaunchScreen.xib */; };
 		0466629D1C151B9300D5521D /* OCNewProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0466629C1C151B9300D5521D /* OCNewProjectTests.m */; };
+		046A04B21C15792900F9372A /* JKHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 046A04B11C15792900F9372A /* JKHttpRequest.m */; };
+		046A04B51C157A1500F9372A /* JKHttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 046A04B41C157A1500F9372A /* JKHttpManager.m */; };
+		046A04B81C157ACF00F9372A /* RootModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 046A04B71C157ACF00F9372A /* RootModel.m */; };
+		046A04BB1C157AF700F9372A /* AppModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 046A04BA1C157AF700F9372A /* AppModel.m */; };
+		046A04BE1C1584CB00F9372A /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046A04BD1C1584CB00F9372A /* RootViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +37,24 @@
 		046662821C151B9300D5521D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		046662841C151B9300D5521D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		046662851C151B9300D5521D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		046662871C151B9300D5521D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		046662881C151B9300D5521D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		046662871C151B9300D5521D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = OCNewProject/ViewController.h; sourceTree = "<group>"; };
+		046662881C151B9300D5521D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = OCNewProject/ViewController.m; sourceTree = "<group>"; };
 		0466628B1C151B9300D5521D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0466628D1C151B9300D5521D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		046662901C151B9300D5521D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		046662961C151B9300D5521D /* OCNewProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCNewProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0466629B1C151B9300D5521D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0466629C1C151B9300D5521D /* OCNewProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCNewProjectTests.m; sourceTree = "<group>"; };
+		046A04B01C15792900F9372A /* JKHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKHttpRequest.h; sourceTree = "<group>"; };
+		046A04B11C15792900F9372A /* JKHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKHttpRequest.m; sourceTree = "<group>"; };
+		046A04B31C157A1500F9372A /* JKHttpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKHttpManager.h; sourceTree = "<group>"; };
+		046A04B41C157A1500F9372A /* JKHttpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKHttpManager.m; sourceTree = "<group>"; };
+		046A04B61C157ACF00F9372A /* RootModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootModel.h; sourceTree = "<group>"; };
+		046A04B71C157ACF00F9372A /* RootModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootModel.m; sourceTree = "<group>"; };
+		046A04B91C157AF700F9372A /* AppModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppModel.h; sourceTree = "<group>"; };
+		046A04BA1C157AF700F9372A /* AppModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppModel.m; sourceTree = "<group>"; };
+		046A04BC1C1584CB00F9372A /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		046A04BD1C1584CB00F9372A /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +78,10 @@
 		046662741C151B9300D5521D = {
 			isa = PBXGroup;
 			children = (
+				046A04AF1C1578E900F9372A /* controller */,
+				046A04AE1C1578C800F9372A /* view */,
+				046A04AD1C15787D00F9372A /* model */,
+				046A04AC1C15787600F9372A /* net */,
 				0466627F1C151B9300D5521D /* OCNewProject */,
 				046662991C151B9300D5521D /* OCNewProjectTests */,
 				0466627E1C151B9300D5521D /* Products */,
@@ -83,8 +102,6 @@
 			children = (
 				046662841C151B9300D5521D /* AppDelegate.h */,
 				046662851C151B9300D5521D /* AppDelegate.m */,
-				046662871C151B9300D5521D /* ViewController.h */,
-				046662881C151B9300D5521D /* ViewController.m */,
 				0466628A1C151B9300D5521D /* Main.storyboard */,
 				0466628D1C151B9300D5521D /* Images.xcassets */,
 				0466628F1C151B9300D5521D /* LaunchScreen.xib */,
@@ -117,6 +134,46 @@
 				0466629B1C151B9300D5521D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		046A04AC1C15787600F9372A /* net */ = {
+			isa = PBXGroup;
+			children = (
+				046A04B01C15792900F9372A /* JKHttpRequest.h */,
+				046A04B11C15792900F9372A /* JKHttpRequest.m */,
+				046A04B31C157A1500F9372A /* JKHttpManager.h */,
+				046A04B41C157A1500F9372A /* JKHttpManager.m */,
+			);
+			name = net;
+			sourceTree = "<group>";
+		};
+		046A04AD1C15787D00F9372A /* model */ = {
+			isa = PBXGroup;
+			children = (
+				046A04B61C157ACF00F9372A /* RootModel.h */,
+				046A04B71C157ACF00F9372A /* RootModel.m */,
+				046A04B91C157AF700F9372A /* AppModel.h */,
+				046A04BA1C157AF700F9372A /* AppModel.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		046A04AE1C1578C800F9372A /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		046A04AF1C1578E900F9372A /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				046662871C151B9300D5521D /* ViewController.h */,
+				046662881C151B9300D5521D /* ViewController.m */,
+				046A04BC1C1584CB00F9372A /* RootViewController.h */,
+				046A04BD1C1584CB00F9372A /* RootViewController.m */,
+			);
+			name = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +276,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				046A04B21C15792900F9372A /* JKHttpRequest.m in Sources */,
 				046662891C151B9300D5521D /* ViewController.m in Sources */,
+				046A04BE1C1584CB00F9372A /* RootViewController.m in Sources */,
+				046A04BB1C157AF700F9372A /* AppModel.m in Sources */,
+				046A04B51C157A1500F9372A /* JKHttpManager.m in Sources */,
 				046662861C151B9300D5521D /* AppDelegate.m in Sources */,
 				046662831C151B9300D5521D /* main.m in Sources */,
+				046A04B81C157ACF00F9372A /* RootModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +478,7 @@
 				046662A21C151B9400D5521D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		046662A31C151B9400D5521D /* Build configuration list for PBXNativeTarget "OCNewProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +487,7 @@
 				046662A51C151B9400D5521D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
