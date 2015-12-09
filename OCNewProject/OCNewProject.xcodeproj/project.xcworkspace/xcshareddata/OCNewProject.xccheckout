@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B10F73CE-E2BD-499F-B4B3-60AAC4D3E5B5</string>
+	<key>IDESourceControlProjectName</key>
+	<string>OCNewProject</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>721449E557E656B0F039C1DEC15E6FB4E63611A7</key>
+		<string>https://github.com/Jking110/Network-request.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>OCNewProject/OCNewProject.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>721449E557E656B0F039C1DEC15E6FB4E63611A7</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Jking110/Network-request.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>721449E557E656B0F039C1DEC15E6FB4E63611A7</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>721449E557E656B0F039C1DEC15E6FB4E63611A7</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Network-request</string>
+		</dict>
+	</array>
+</dict>
+</plist>
