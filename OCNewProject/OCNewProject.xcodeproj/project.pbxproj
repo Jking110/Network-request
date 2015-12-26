@@ -19,6 +19,8 @@
 		046A04B81C157ACF00F9372A /* RootModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 046A04B71C157ACF00F9372A /* RootModel.m */; };
 		046A04BB1C157AF700F9372A /* AppModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 046A04BA1C157AF700F9372A /* AppModel.m */; };
 		046A04BE1C1584CB00F9372A /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046A04BD1C1584CB00F9372A /* RootViewController.m */; };
+		049E73211C2EAB610031AD74 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 049E73201C2EAB610031AD74 /* NSArray+Log.m */; };
+		049E73251C2EAC330031AD74 /* NSDictionary+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 049E73241C2EAC330031AD74 /* NSDictionary+Log.m */; };
 		04D680D61C185F8700B00DB6 /* JKHttpBlockRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D680D51C185F8700B00DB6 /* JKHttpBlockRequest.m */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +58,10 @@
 		046A04BA1C157AF700F9372A /* AppModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppModel.m; sourceTree = "<group>"; };
 		046A04BC1C1584CB00F9372A /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		046A04BD1C1584CB00F9372A /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		049E731F1C2EAB610031AD74 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+Log.h"; path = "OCNewProject/NSArray+Log.h"; sourceTree = "<group>"; };
+		049E73201C2EAB610031AD74 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Log.m"; path = "OCNewProject/NSArray+Log.m"; sourceTree = "<group>"; };
+		049E73231C2EAC330031AD74 /* NSDictionary+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Log.h"; sourceTree = "<group>"; };
+		049E73241C2EAC330031AD74 /* NSDictionary+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Log.m"; sourceTree = "<group>"; };
 		04D680D41C185F8700B00DB6 /* JKHttpBlockRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKHttpBlockRequest.h; sourceTree = "<group>"; };
 		04D680D51C185F8700B00DB6 /* JKHttpBlockRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKHttpBlockRequest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,6 +87,7 @@
 		046662741C151B9300D5521D = {
 			isa = PBXGroup;
 			children = (
+				049E73221C2EAB730031AD74 /* tool */,
 				046A04AF1C1578E900F9372A /* controller */,
 				046A04AE1C1578C800F9372A /* view */,
 				046A04AD1C15787D00F9372A /* model */,
@@ -179,6 +186,17 @@
 				046A04BD1C1584CB00F9372A /* RootViewController.m */,
 			);
 			name = controller;
+			sourceTree = "<group>";
+		};
+		049E73221C2EAB730031AD74 /* tool */ = {
+			isa = PBXGroup;
+			children = (
+				049E731F1C2EAB610031AD74 /* NSArray+Log.h */,
+				049E73201C2EAB610031AD74 /* NSArray+Log.m */,
+				049E73231C2EAC330031AD74 /* NSDictionary+Log.h */,
+				049E73241C2EAC330031AD74 /* NSDictionary+Log.m */,
+			);
+			name = tool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,6 +304,8 @@
 				046A04BE1C1584CB00F9372A /* RootViewController.m in Sources */,
 				046A04BB1C157AF700F9372A /* AppModel.m in Sources */,
 				046A04B51C157A1500F9372A /* JKHttpManager.m in Sources */,
+				049E73251C2EAC330031AD74 /* NSDictionary+Log.m in Sources */,
+				049E73211C2EAB610031AD74 /* NSArray+Log.m in Sources */,
 				04D680D61C185F8700B00DB6 /* JKHttpBlockRequest.m in Sources */,
 				046662861C151B9300D5521D /* AppDelegate.m in Sources */,
 				046662831C151B9300D5521D /* main.m in Sources */,

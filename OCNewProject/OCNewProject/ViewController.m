@@ -11,6 +11,7 @@
 #import "JKHttpManager.h"
 #import "JKHttpBlockRequest.h"
 #import "AppModel.h"
+#import "NSDictionary+Log.h"
 #define  PATH @"http://iappfree.candou.com:8080/free/applications/limited?currency=rmb&page=%d"
 #define  PAGE 1
 @interface ViewController ()
@@ -21,15 +22,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //使用block请求数据时请调用此方法
     //[self loadData];
+    
+    // 使用代理请求数据时请调用此方法
     NSString *httpUrl = [NSString stringWithFormat:PATH,PAGE];
     [self addTask:httpUrl selector:@selector(requestFinished:)];
+
     
     UILabel *label =[[UILabel alloc] initWithFrame:CGRectMake(50, 50, 300, 300)];
     label.text = @"解析结果会在控制台上打印!";
     label.textAlignment = 1;
     label.textColor = [UIColor redColor];
-    label.font = [UIFont systemFontOfSize:14];
+    label.font = [UIFont systemFontOfSize:25];
     
     [self.view addSubview:label];
     
@@ -37,7 +42,7 @@
 //网络数据请求
 -(void)requestFinished:(JKHttpRequest *)hr{
     
-    NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:hr.downloadData options:NSJSONReadingMutableContainers error:nil];
+    NSDictionary * dict = [NSJSONSerialization JSONObjectWithData:hr.downloadData options:NSJSONReadingMutableContainers error:nil];
     
     if (dict) {
         NSLog(@"开始解析");
@@ -53,20 +58,23 @@
         }
         //移除已完成任务
         [[ JKHttpManager sharedManager] removeTask:hr.httpUrl];
-        //创建plist文件在桌面上
-        NSString * path = @"/Users/hhh/Desktop/doc.plist";
-        BOOL tag = [appArray writeToFile:path atomically:YES];
-        if (tag) {
-            NSLog(@"创建在桌面上!");
-        }else{
-            NSLog(@"不能创建啊!");
-        }
+        //创建plist文件在沙盒目录
+            // 1.获得沙盒根路径
+            NSString *home = NSHomeDirectory();
+            NSLog(@"%@",home);
+            // 2.document路径
+            NSString *docPath = [home stringByAppendingPathComponent:@"Documents"];
+            NSString *filepath = [docPath stringByAppendingPathComponent:@"data.plist"];
+            
+            BOOL tag = [appArray writeToFile:filepath atomically:YES];
+            if (tag) {
+                NSLog(@"创建在本地沙盒目录!");
+            }else{
+                NSLog(@"不能创建本地沙盒目录!");
+            }
     }
     
-
-    
-
-    
+        
 }
 //block网络数据请求
 //-(void)loadData{
@@ -94,19 +102,25 @@
 //                    NSLog(@"%@",temp);
 //                }
 //            
-//                //创建plist文件在桌面上
-//                NSString * path = @"/Users/hhh/Desktop/doc.plist";
-//                BOOL tag = [temp writeToFile:path atomically:YES];
+//                //创建plist文件在沙盒目录
+//                // 1.获得沙盒根路径
+//                NSString *home = NSHomeDirectory();
+//                NSLog(@"%@",home);
+//                // 2.document路径
+//                NSString *docPath = [home stringByAppendingPathComponent:@"Documents"];
+//                NSString *filepath = [docPath stringByAppendingPathComponent:@"data.plist"];
+//
+//                BOOL tag = [temp writeToFile:filepath atomically:YES];
 //                if (tag) {
-//                    NSLog(@"创建在桌面上!");
+//                    NSLog(@"创建在本地沙盒目录!");
 //                }else{
-//                    NSLog(@"不能创建啊!");
-//                
-//            }
+//                    NSLog(@"不能创建本地沙盒目录!");
+//                }
+//
 //        }
-//        
+//
 //    }];
-//    
+//
 //}
 
 
